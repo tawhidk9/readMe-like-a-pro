@@ -17,7 +17,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Does the User have to install anything to use this application?',
+        message: 'Does the User have to install anything or run any commands to use this application?',
         name: 'installation'
     },
     {
@@ -31,6 +31,11 @@ const questions = [
         name: 'contribution'
     },
     {
+        type: 'input',
+        message: 'How can the user run any tests',
+        name: 'tests'
+    },
+    {
         type: 'list',
         message: 'What license was used for the project?',
         name: 'license',
@@ -41,13 +46,23 @@ const questions = [
             'GPL',
             'None'
         ]
-    }
+    },
+    {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'email'
+    },
+    {
+        type: 'input',
+        message: 'What is your Github username',
+        name: 'username'
+    },
 ];
 
 //Function to write readME file 
 function writeToFile(fileName, data){
-    let data = markdown(data);
-    fs.writeFile(fileName, info, (err) =>
+    let content = markdown(data);
+    fs.writeFile(fileName, content, (err) =>
     (err) ? 'error': 'success')
 };
 
