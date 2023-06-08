@@ -1,7 +1,7 @@
 //Dependencies
 const inquire = require('inquirer');
 const fs = require('fs');
-const markdown = require ('generateMarkdown.js');
+const markdown = require ('./utils/generateMarkdown');
 
 //Create questions
 const questions = [
