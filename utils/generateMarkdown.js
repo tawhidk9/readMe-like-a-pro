@@ -17,23 +17,36 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license === 'MIT License') {
-    return 'MIT License';
-  }
-  else if (license === 'Creative Commons') {
-    return 'Creative Commons';
-  }
-  else if (license === 'GNU') {
-    return 'GNU';
-  }
-  else {
+  if (license === 'MIT'){
+    return '(https://opensource.org/licenses/MIT)';
+  }else if (license === 'APACHE'){
+    return 'https://www.apache.org/licenses/LICENSE-2.0';
+  }else if (license === 'BSD'){
+    return 'https://opensource.org/license/bsd-3-clause/';
+  }else if (license === 'GNU'){
+    return '(https://www.gnu.org/licenses/gpl-3.0)';
+  }else {
     return '';
   }
+  
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === 'MIT'){
+    return 'MIT';
+  }else if (license === 'APACHE'){
+    return 'APACHE';
+  }else if (license === 'GNU'){
+    return 'GNU';
+  }else if (license === 'BSD'){
+    return 'BSD'
+  }else {
+    return '';
+  }
+  
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {

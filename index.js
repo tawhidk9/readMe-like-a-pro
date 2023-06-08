@@ -43,7 +43,7 @@ const questions = [
             'APACHE',
             'MIT',
             'BSD',
-            'IBM',
+            'GNU',
             'None'
         ]
     },
