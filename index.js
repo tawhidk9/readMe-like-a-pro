@@ -12,7 +12,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide a brief description of the project',
+        message: 'Provide a brief description of the project:',
         name: 'description'
     },
     {
@@ -22,7 +22,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Give a description on how to use the application',
+        message: 'Give a description on how to use the application:',
         name: 'usage'
     },
     {
@@ -32,7 +32,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'How can the user run any tests',
+        message: 'How can the user run any tests:',
         name: 'tests'
     },
     {
@@ -54,7 +54,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is your Github username',
+        message: 'What is your Github username:',
         name: 'username'
     },
 ];

@@ -37,10 +37,12 @@ function generateMarkdown(data) {
   ${data.contribution}
 
   ## Tests
- To test: ${data.tests}
+  To test: ${data.tests}
 
   ## Questions
-  If you have any questions about this repo, open an issue or contact me directly at [${data.email}](mailto:${data.email}). You can find more of my work at [${data.username}](https://www.github.com/${data.username}).
+  Questions/Concerns/Etc: [${data.email}](mailto:${data.email})
+  
+  More of my work:: [${data.username}](https://www.github.com/${data.username})
 `;
 }
 
